@@ -1,2 +1,8 @@
-vendor/
+/composer.lock
+/vendor
+.idea/
 demo/output/*.png
+src/cache/*
+!src/cache/.gitkeep
+tests/qrcodes/*
+!tests/qrcodes/.gitkeep

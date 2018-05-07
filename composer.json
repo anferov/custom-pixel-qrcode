@@ -1,27 +1,36 @@
 {
-    "name": "deltalab/custom-pixel-qrcode",
-    "type": "library",
-    "description": "Custom renderer for QRCodes, using pre-rendered images as pixels",
-    "homepage": "https://php.dzienia.pl/custom-pixel-qrcode",
-    "license": "MIT",
-    "time": "2016-05-17",
-    "keywords": ["PHPQRCode", "qrcode"],
-    "authors": [
-        {
-            "name": "Dominik Dzienia",
-            "email": "dominik.dzienia@gmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0"
+  "name": "anferov/custom-pixel-qrcode",
+  "type": "library",
+  "description": "Custom renderer for QRCodes, using pre-rendered images as pixels",
+  "homepage": "https://php.dzienia.pl/custom-pixel-qrcode",
+  "license": "MIT",
+  "time": "2016-05-17",
+  "keywords": [
+    "PHPQRCode",
+    "qrcode"
+  ],
+  "authors": [
+    {
+      "name": "Dominik Dzienia",
+      "email": "dominik.dzienia@gmail.com"
     },
-    "autoload": {
-        "psr-4": {
-            "DeltaLab\\CustomPixelQRCode\\": "lib/"
-        },
-        "files": [
-            "lib/nonpsr/phpqrcode/qrlib.php"
-        ]
+    {
+      "name": "Oleg Anferov",
+      "email": "anferov.oleg@gmail.com"
     }
-
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Anferov\\QrCode\\": "src/"
+    },
+    "files": [
+      "src/Reader/Common/customFunctions.php"
+    ]
+  }
 }
